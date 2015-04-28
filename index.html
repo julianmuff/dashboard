@@ -1,0 +1,2393 @@
+<!DOCTYPE html>
+
+<html >
+  <head>
+    <title>BOÈM - Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <meta charset="utf-8">
+      <style type="text/css">
+            <!--
+            p { font-family: 'font', sans-serif; line-height: 20pt; font-weight: 100; font-color: white;}
+            li { font-family: 'font', sans-serif; line-height: 20pt; font-weight: 100; font-color: white;}
+            label { font-family: 'font', sans-serif; line-height: 20pt; font-weight: 100; font-color: white;}
+            //-->
+        </style>
+      <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+      
+      <script>
+  $(document).ready(function() {
+    $("#cafe-event-datepicker").datepicker();
+  });
+  </script>
+      
+      
+      <script type="text/javascript">
+function deaktivierenmo() {
+if (document.getElementById('mocheckbox').checked == true) {	
+
+document.getElementById('vonmo').disabled = true;
+document.getElementById('bismo').disabled = true;
+document.getElementById('vonmo2').disabled = true;
+document.getElementById('bismo2').disabled = true;
+ }
+ else {
+document.getElementById('vonmo').disabled = false;
+document.getElementById('bismo').disabled = false;
+document.getElementById('vonmo2').disabled = false;
+document.getElementById('bismo2').disabled = false;
+ }
+}
+  
+function deaktivierendi() {
+if (document.getElementById('dicheckbox').checked == true) {	
+
+document.getElementById('vondi').disabled = true;
+document.getElementById('bisdi').disabled = true;
+document.getElementById('vondi2').disabled = true;
+document.getElementById('bisdi2').disabled = true;
+ }
+ else {
+document.getElementById('vondi').disabled = false;
+document.getElementById('bisdi').disabled = false;
+document.getElementById('vondi2').disabled = false;
+document.getElementById('bisdi2').disabled = false;
+ }
+}
+          
+function deaktivierenmi() {
+if (document.getElementById('micheckbox').checked == true) {	
+
+document.getElementById('vonmi').disabled = true;
+document.getElementById('bismi').disabled = true;
+document.getElementById('vonmi2').disabled = true;
+document.getElementById('bismi2').disabled = true;
+ }
+ else {
+document.getElementById('vonmi').disabled = false;
+document.getElementById('bismi').disabled = false;
+document.getElementById('vonmi2').disabled = false;
+document.getElementById('bismi2').disabled = false;
+ }
+}
+          
+function deaktivierendo() {
+if (document.getElementById('docheckbox').checked == true) {	
+
+document.getElementById('vondo').disabled = true;
+document.getElementById('bisdo').disabled = true;
+document.getElementById('vondo2').disabled = true;
+document.getElementById('bisdo2').disabled = true;
+ }
+ else {
+document.getElementById('vondo').disabled = false;
+document.getElementById('bisdo').disabled = false;
+document.getElementById('vondo2').disabled = false;
+document.getElementById('bisdo2').disabled = false;
+ }
+}
+          
+function deaktivierenfr() {
+if (document.getElementById('frcheckbox').checked == true) {	
+
+document.getElementById('vonfr').disabled = true;
+document.getElementById('bisfr').disabled = true;
+document.getElementById('vonfr2').disabled = true;
+document.getElementById('bisfr2').disabled = true;
+ }
+ else {
+document.getElementById('vonfr').disabled = false;
+document.getElementById('bisfr').disabled = false;
+document.getElementById('vonfr2').disabled = false;
+document.getElementById('bisfr2').disabled = false;
+ }
+}
+          
+function deaktivierensa() {
+if (document.getElementById('sacheckbox').checked == true) {	
+
+document.getElementById('vonsa').disabled = true;
+document.getElementById('bissa').disabled = true;
+document.getElementById('vonsa2').disabled = true;
+document.getElementById('bissa2').disabled = true;
+ }
+ else {
+document.getElementById('vonsa').disabled = false;
+document.getElementById('bissa').disabled = false;
+document.getElementById('vonsa2').disabled = false;
+document.getElementById('bissa2').disabled = false;
+ }
+}
+          
+          
+function deaktivierenso() {
+if (document.getElementById('socheckbox').checked == true) {	
+
+document.getElementById('vonso').disabled = true;
+document.getElementById('bisso').disabled = true;
+document.getElementById('vonso2').disabled = true;
+document.getElementById('bisso2').disabled = true;
+ }
+ else {
+document.getElementById('vonso').disabled = false;
+document.getElementById('bisso').disabled = false;
+document.getElementById('vonso2').disabled = false;
+document.getElementById('bisso2').disabled = false;
+ }
+}
+          
+     function durchgehendmoja() {
+         
+         document.getElementById('vonmo2').style.visibility = "hidden";
+         document.getElementById('bismo2').style.visibility = "hidden";
+     }
+         function durchgehendmonein() {
+         
+         document.getElementById('vonmo2').style.visibility = "visible";
+         document.getElementById('bismo2').style.visibility = "visible";
+     }
+    
+               function durchgehenddija() {
+         
+         document.getElementById('vondi2').style.visibility = "hidden";
+         document.getElementById('bisdi2').style.visibility = "hidden";
+     }
+         function durchgehenddinein() {
+         
+         document.getElementById('vondi2').style.visibility = "visible";
+         document.getElementById('bisdi2').style.visibility = "visible";
+     }
+               function durchgehendmija() {
+         
+         document.getElementById('vonmi2').style.visibility = "hidden";
+         document.getElementById('bismi2').style.visibility = "hidden";
+     }
+         function durchgehendminein() {
+         
+         document.getElementById('vonmi2').style.visibility = "visible";
+         document.getElementById('bismi2').style.visibility = "visible";
+     }
+          
+               function durchgehenddoja() {
+         
+         document.getElementById('vondo2').style.visibility = "hidden";
+         document.getElementById('bisdo2').style.visibility = "hidden";
+     }
+         function durchgehenddonein() {
+         
+         document.getElementById('vondo2').style.visibility = "visible";
+         document.getElementById('bisdo2').style.visibility = "visible";
+     }
+          
+               function durchgehendfrja() {
+         
+         document.getElementById('vonfr2').style.visibility = "hidden";
+         document.getElementById('bisfr2').style.visibility = "hidden";
+     }
+         function durchgehendfrnein() {
+         
+         document.getElementById('vonfr2').style.visibility = "visible";
+         document.getElementById('bisfr2').style.visibility = "visible";
+     }
+          
+               function durchgehendsaja() {
+         
+         document.getElementById('vonsa2').style.visibility = "hidden";
+         document.getElementById('bissa2').style.visibility = "hidden";
+     }
+         function durchgehendsanein() {
+         
+         document.getElementById('vonsa2').style.visibility = "visible";
+         document.getElementById('bissa2').style.visibility = "visible";
+     }
+          
+               function durchgehendsoja() {
+         
+         document.getElementById('vonso2').style.visibility = "hidden";
+         document.getElementById('bisso2').style.visibility = "hidden";
+     }
+         function durchgehendsonein() {
+         
+         document.getElementById('vonso2').style.visibility = "visible";
+         document.getElementById('bisso2').style.visibility = "visible";
+     }
+          
+          
+          
+    
+    function cafestilauswahl1fun() {
+    document.getElementById('cafe-stil-auswahl-1').style.color = 'white';
+    document.getElementById('cafe-stil-auswahl-2').style.color = 'black';
+    document.getElementById('cafe-stil-auswahl-3').style.color = 'black';
+        
+        }
+          
+    function cafestilauswahl2fun() {
+    document.getElementById('cafe-stil-auswahl-1').style.color = 'black';
+    document.getElementById('cafe-stil-auswahl-2').style.color = 'white';
+    document.getElementById('cafe-stil-auswahl-3').style.color = 'black';
+        
+        }
+          
+    function cafestilauswahl3fun() {
+    document.getElementById('cafe-stil-auswahl-1').style.color = 'black';
+    document.getElementById('cafe-stil-auswahl-2').style.color = 'black';
+    document.getElementById('cafe-stil-auswahl-3').style.color = 'white';
+        
+        }
+          
+          
+    
+    function cafeleuteauswahl1fun() {
+    document.getElementById('cafe-leute-auswahl-1').style.color = 'white';
+    document.getElementById('cafe-leute-auswahl-2').style.color = 'black';
+    document.getElementById('cafe-leute-auswahl-3').style.color = 'black';
+        
+        }
+          
+    function cafeleuteauswahl2fun() {
+    document.getElementById('cafe-leute-auswahl-1').style.color = 'black';
+    document.getElementById('cafe-leute-auswahl-2').style.color = 'white';
+    document.getElementById('cafe-leute-auswahl-3').style.color = 'black';
+        
+        }
+          
+    function cafeleuteauswahl3fun() {
+    document.getElementById('cafe-leute-auswahl-1').style.color = 'black';
+    document.getElementById('cafe-leute-auswahl-2').style.color = 'black';
+    document.getElementById('cafe-leute-auswahl-3').style.color = 'white';
+        
+        }
+          
+          
+    function cafeplatzauswahl1fun() {
+    document.getElementById('cafe-platz-auswahl-1').style.color = 'white';
+    document.getElementById('cafe-platz-auswahl-2').style.color = 'black';
+
+        
+        }
+          
+    function cafeplatzauswahl2fun() {
+    document.getElementById('cafe-platz-auswahl-1').style.color = 'black';
+    document.getElementById('cafe-platz-auswahl-2').style.color = 'white';
+
+        
+        }
+          
+          
+          function caferauchenauswahl1fun() {
+    document.getElementById('cafe-rauchen-auswahl-1').style.color = 'white';
+    document.getElementById('cafe-rauchen-auswahl-2').style.color = 'black';
+    document.getElementById('cafe-rauchen-auswahl-3').style.color = 'black';
+        
+        }
+          
+    function caferauchenauswahl2fun() {
+    document.getElementById('cafe-rauchen-auswahl-1').style.color = 'black';
+    document.getElementById('cafe-rauchen-auswahl-2').style.color = 'white';
+    document.getElementById('cafe-rauchen-auswahl-3').style.color = 'black';
+        
+        }
+          
+    function caferauchenauswahl3fun() {
+    document.getElementById('cafe-rauchen-auswahl-1').style.color = 'black';
+    document.getElementById('cafe-rauchen-auswahl-2').style.color = 'black';
+    document.getElementById('cafe-rauchen-auswahl-3').style.color = 'white';
+        
+        }
+          
+          
+        function cafeeventauswahl1fun() {
+    document.getElementById('cafe-event-auswahl-1').style.color = 'white';
+    document.getElementById('cafe-event-auswahl-2').style.color = 'black';
+    document.getElementById('cafe-plus').style.display = 'block';
+
+        
+        }
+          
+    function cafeeventauswahl2fun() {
+    document.getElementById('cafe-event-auswahl-1').style.color = 'black';
+    document.getElementById('cafe-event-auswahl-2').style.color = 'white';
+        document.getElementById('cafe-plus').style.display = 'none';
+        document.getElementById('cafe-event').style.display = 'none';
+
+        
+        }
+          
+    function cafeeventeinmaligfun() {
+    document.getElementById('cafe-event-einmalig').style.color = 'white';
+    document.getElementById('cafe-event-wiederholend').style.color = 'black';
+
+
+        
+        }
+          
+    function cafeeventwiederholendfun() {
+    document.getElementById('cafe-event-einmalig').style.color = 'black';
+    document.getElementById('cafe-event-wiederholend').style.color = 'white';
+
+
+        }
+
+          
+    function pluseventcafe() {
+        document.getElementById('cafe-event').style.display = 'block';
+    }
+        
+          
+        function menümo1plus() {
+            document.getElementById('menümo2').style.display = 'block';
+            document.getElementById('menümo1-plus').style.display = 'none';
+            document.getElementById('menümo2-plus').style.display = 'block';
+            document.getElementById('menümo2-minus').style.display = 'block';
+
+        }
+          
+        function menümo2plus() {
+            document.getElementById('menümo3').style.display = 'block';
+            document.getElementById('menümo2-plus').style.display = 'none';
+            document.getElementById('menümo3-plus').style.display = 'block';
+            document.getElementById('menümo2-minus').style.display = 'none';
+            document.getElementById('menümo3-minus').style.display = 'block';
+        }
+          
+        function menümo3plus() {
+            document.getElementById('menümo4').style.display = 'block';
+            document.getElementById('menümo3-plus').style.display = 'none';
+            document.getElementById('menümo4-plus').style.display = 'block';
+            document.getElementById('menümo3-minus').style.display = 'none';
+            document.getElementById('menümo4-minus').style.display = 'block';
+                    
+        }
+          
+        function menümo4plus() {
+            document.getElementById('menümo5').style.display = 'block';
+            document.getElementById('menümo4-plus').style.display = 'none';
+            document.getElementById('menümo5-plus').style.display = 'block';
+            document.getElementById('menümo5-plus').style.visibility = 'hidden';
+            document.getElementById('menümo4-minus').style.display = 'none';
+            document.getElementById('menümo5-minus').style.display = 'block';
+
+                      
+        }
+          
+          
+        function menümo2minus() {
+            document.getElementById('menümo2').style.display = 'none';
+            document.getElementById('menümo1-plus').style.display = 'block';
+            document.getElementById('menümo2-plus').style.display = 'none';
+            document.getElementById('menümo3-plus').style.display = 'none';
+            document.getElementById('menümo4-plus').style.display = 'none';
+            document.getElementById('menümo2-minus').style.display = 'none';
+
+        }
+          
+        function menümo3minus() {
+            document.getElementById('menümo3').style.display = 'none';
+            document.getElementById('menümo1-plus').style.display = 'none';
+            document.getElementById('menümo2-plus').style.display = 'block';
+            document.getElementById('menümo3-plus').style.display = 'none';
+            document.getElementById('menümo4-plus').style.display = 'none';
+            document.getElementById('menümo3-minus').style.display = 'none';
+            document.getElementById('menümo2-minus').style.display = 'block';
+
+        }
+          
+        function menümo4minus() {
+            document.getElementById('menümo4').style.display = 'none';
+            document.getElementById('menümo1-plus').style.display = 'none';
+            document.getElementById('menümo2-plus').style.display = 'none';
+            document.getElementById('menümo3-plus').style.display = 'block';
+            document.getElementById('menümo4-plus').style.display = 'none';
+            document.getElementById('menümo3-minus').style.display = 'block';
+            document.getElementById('menümo4-minus').style.display = 'none';
+        }
+          
+          
+        function menümo5minus() {
+            document.getElementById('menümo5').style.display = 'none';
+            document.getElementById('menümo1-plus').style.display = 'none';
+            document.getElementById('menümo2-plus').style.display = 'none';
+            document.getElementById('menümo3-plus').style.display = 'none';
+            document.getElementById('menümo4-plus').style.display = 'block';
+            document.getElementById('menümo5-plus').style.display = 'none';
+            document.getElementById('menümo4-minus').style.display = 'block';
+            document.getElementById('menümo5-minus').style.display = 'none';
+        }
+          
+          
+          function menümosperren() {
+              document.getElementById('menümo-titel').style.color = 'black';
+              document.getElementById('menümo1-text').style.color = 'black';
+              document.getElementById('menümo2-text').style.color = 'black';
+              document.getElementById('menümo3-text').style.color = 'black';
+              document.getElementById('menümo4-text').style.color = 'black';
+              document.getElementById('menümo5-text').style.color = 'black';
+              document.getElementById('menümo1-plus').style.color = 'black';
+              document.getElementById('menümo2-plus').style.color = 'black';
+              document.getElementById('menümo3-plus').style.color = 'black';
+              document.getElementById('menümo4-plus').style.color = 'black';
+              document.getElementById('menümo5-plus').style.color = 'black';
+              document.getElementById('menümo2-minus').style.color = 'black';
+              document.getElementById('menümo3-minus').style.color = 'black';
+              document.getElementById('menümo4-minus').style.color = 'black';
+              document.getElementById('menümo5-minus').style.color = 'black';
+              document.getElementById('menümo-tag').style.color = 'black';
+              document.getElementById('menümo1-input-titel').disabled = 'yes';
+              document.getElementById('menümo1-input-titel').style.background = 'transparent';
+              document.getElementById('menümo1-input-titel').style.border = 'transparent';
+              document.getElementById('menümo1-input-titel').style.borderBottomColor = 'black';
+              document.getElementById('menümo1-input-titel').style.borderRadius = '10px';  
+          }
+          
+                   function menüdi1plus() {
+            document.getElementById('menüdi2').style.display = 'block';
+            document.getElementById('menüdi1-plus').style.display = 'none';
+            document.getElementById('menüdi2-plus').style.display = 'block';
+            document.getElementById('menüdi2-minus').style.display = 'block';
+
+        }
+          
+        function menüdi2plus() {
+            document.getElementById('menüdi3').style.display = 'block';
+            document.getElementById('menüdi2-plus').style.display = 'none';
+            document.getElementById('menüdi3-plus').style.display = 'block';
+            document.getElementById('menüdi2-minus').style.display = 'none';
+            document.getElementById('menüdi3-minus').style.display = 'block';
+        }
+          
+        function menüdi3plus() {
+            document.getElementById('menüdi4').style.display = 'block';
+            document.getElementById('menüdi3-plus').style.display = 'none';
+            document.getElementById('menüdi4-plus').style.display = 'block';
+            document.getElementById('menüdi3-minus').style.display = 'none';
+            document.getElementById('menüdi4-minus').style.display = 'block';
+                    
+        }
+          
+        function menüdi4plus() {
+            document.getElementById('menüdi5').style.display = 'block';
+            document.getElementById('menüdi4-plus').style.display = 'none';
+            document.getElementById('menüdi5-plus').style.display = 'block';
+            document.getElementById('menüdi5-plus').style.visibility = 'hidden';
+            document.getElementById('menüdi4-minus').style.display = 'none';
+            document.getElementById('menüdi5-minus').style.display = 'block';
+
+                      
+        }
+          
+          
+        function menüdi2minus() {
+            document.getElementById('menüdi2').style.display = 'none';
+            document.getElementById('menüdi1-plus').style.display = 'block';
+            document.getElementById('menüdi2-plus').style.display = 'none';
+            document.getElementById('menüdi3-plus').style.display = 'none';
+            document.getElementById('menüdi4-plus').style.display = 'none';
+            document.getElementById('menüdi2-minus').style.display = 'none';
+
+        }
+          
+        function menüdi3minus() {
+            document.getElementById('menüdi3').style.display = 'none';
+            document.getElementById('menüdi1-plus').style.display = 'none';
+            document.getElementById('menüdi2-plus').style.display = 'block';
+            document.getElementById('menüdi3-plus').style.display = 'none';
+            document.getElementById('menüdi4-plus').style.display = 'none';
+            document.getElementById('menüdi3-minus').style.display = 'none';
+            document.getElementById('menüdi2-minus').style.display = 'block';
+
+        }
+          
+        function menüdi4minus() {
+            document.getElementById('menüdi4').style.display = 'none';
+            document.getElementById('menüdi1-plus').style.display = 'none';
+            document.getElementById('menüdi2-plus').style.display = 'none';
+            document.getElementById('menüdi3-plus').style.display = 'block';
+            document.getElementById('menüdi4-plus').style.display = 'none';
+            document.getElementById('menüdi3-minus').style.display = 'block';
+            document.getElementById('menüdi4-minus').style.display = 'none';
+        }
+          
+          
+        function menüdi5minus() {
+            document.getElementById('menüdi5').style.display = 'none';
+            document.getElementById('menüdi1-plus').style.display = 'none';
+            document.getElementById('menüdi2-plus').style.display = 'none';
+            document.getElementById('menüdi3-plus').style.display = 'none';
+            document.getElementById('menüdi4-plus').style.display = 'block';
+            document.getElementById('menüdi5-plus').style.display = 'none';
+            document.getElementById('menüdi4-minus').style.display = 'block';
+            document.getElementById('menüdi5-minus').style.display = 'none';
+        }
+          
+          
+          function menüdisperren() {
+              document.getElementById('menüdi-titel').style.color = 'black';
+              document.getElementById('menüdi1-text').style.color = 'black';
+              document.getElementById('menüdi2-text').style.color = 'black';
+              document.getElementById('menüdi3-text').style.color = 'black';
+              document.getElementById('menüdi4-text').style.color = 'black';
+              document.getElementById('menüdi5-text').style.color = 'black';
+              document.getElementById('menüdi1-plus').style.color = 'black';
+              document.getElementById('menüdi2-plus').style.color = 'black';
+              document.getElementById('menüdi3-plus').style.color = 'black';
+              document.getElementById('menüdi4-plus').style.color = 'black';
+              document.getElementById('menüdi5-plus').style.color = 'black';
+              document.getElementById('menüdi2-minus').style.color = 'black';
+              document.getElementById('menüdi3-minus').style.color = 'black';
+              document.getElementById('menüdi4-minus').style.color = 'black';
+              document.getElementById('menüdi5-minus').style.color = 'black';
+              document.getElementById('menüdi-tag').style.color = 'black';
+              document.getElementById('menüdi1-input-titel').disabled = 'yes';
+              document.getElementById('menüdi1-input-titel').style.background = 'transparent';
+              document.getElementById('menüdi1-input-titel').style.border = 'transparent';
+              document.getElementById('menüdi1-input-titel').style.borderBottomColor = 'black';
+              document.getElementById('menüdi1-input-titel').style.borderRadius = '10px';
+              document.getElementById('menümo').style.backgroundColor = '#6E6E6E';
+        
+            
+          }
+            
+            
+            
+            
+        
+          
+
+          
+
+          
+          
+</script>
+  </head>
+    
+  <body>
+      
+      
+      
+      <div id="ring">
+          
+          <div id="info">
+              <p id="boem">BOÈM</p>
+              <div id="namegeschäft">
+              <label type="text" id="name">DB-name</label>
+              </div>
+              
+              <div id="daten">
+              <label type="text" id="strasse" class="main_info">DB-Strasse</label>
+              <label type="text" id="plzort" class="main_info">DB-Plz. Ort</label>
+              <label type="text" id="tel" class="main_info">DB-Nummer</label>       
+              <label type="text" id="web" class="main_info">DB-web</label>     
+              <label type="text" id="mail" class="main_info">DB-mail</label>
+                </div>
+
+              
+              </div>
+      
+      </div>
+      
+      <div id="allgemein">
+          
+          <div id="beschriebe">
+            <div id="beschreibdeutsch">
+              <p>BESCHRIEB DES BETRIEBS AUF DEUTSCH</p>
+          </div>
+          
+        <div id="beschreibenglisch">
+              <p>BESCHRIEB DES BETRIEBS AUF ENGLISCH</p>
+          </div>
+          
+          <div id="textdeutschdiv">
+              <form action="textdeutsch.htm">
+    <textarea name="textdeutsch" cols="50" rows="10" maxlength="2000" style="width:450px"></textarea>
+
+</form>
+              
+              </div>
+          
+          <div id="textenglischdiv">
+              <form action="textenglisch.htm">
+    <textarea name="textenglisch" cols="50" rows="10" maxlength="2000" style="width:450px"></textarea>
+
+</form>
+              
+              </div>
+              
+              <div id="bilder">
+                <p>BILDER DES LOKALS</p><br>
+
+              </div>
+              
+              <div class="image-upload">
+    <label for="file-input">
+        <img src="css/pluszeichen.png"/>
+    </label>
+
+    <input id="file-input" type="file"/>
+                  <input type="submit" value="Hochladen" name="Hochladen"></p>
+</div>
+              
+              <div id="bilderupload"></div>
+              
+              <div id="öffnungszeiten">
+              <p>ÖFFNUNGSZEITEN</p>
+              </div>
+              
+<div id="öffnungszeitentabellediv">
+<table id="öffnungszeitentabelle1" cellspacing="50px">
+<tr>
+    <td><p></p></td>
+    <td style="width:80px; height:20px"><p>MO</p></td>
+    <td style="width:80px; height:20px"><p>DI</p></td>
+    <td style="width:80px; height:20px"><p>MI</p></td>
+    <td style="width:80px; height:20px"><p>DO</p></td>
+    <td style="width:80px; height:20px"><p>FR</p></td>
+    <td style="width:80px; height:20px"><p>SA</p></td>
+    <td style="width:80px; height:20px"><p>SO</p></td>
+</tr>
+</table>    
+<table id="öffnungszeitentabelle2" cellspacing="10px">
+<tr>
+    <td style="width:130px"><p>VON</p></td>
+    <td style="width:80px; height:20px"><select id="vonmo" name="time" size="1">
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                                <option value="3:30">3:30</option>
+                                <option value="4:00">4:00</option>
+                                <option value="4:30">4:30</option>
+                                <option value="5:00">5:00</option>
+                                <option value="5:30">5:30</option>
+                                <option value="6:00">6:00</option>
+                                <option value="6:30">6:30</option>
+                                <option value="7:00">7:00</option>
+                                <option value="7:30">7:30</option>
+                                <option value="8:00">8:00</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option></select></td>
+    <td style="width:80px; height:20px"><select id="vondi" name="time" size="1">
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                                <option value="3:30">3:30</option>
+                                <option value="4:00">4:00</option>
+                                <option value="4:30">4:30</option>
+                                <option value="5:00">5:00</option>
+                                <option value="5:30">5:30</option>
+                                <option value="6:00">6:00</option>
+                                <option value="6:30">6:30</option>
+                                <option value="7:00">7:00</option>
+                                <option value="7:30">7:30</option>
+                                <option value="8:00">8:00</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option></select></td>
+    <td style="width:80px; height:20px"><select id="vonmi" name="time" size="1">
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                                <option value="3:30">3:30</option>
+                                <option value="4:00">4:00</option>
+                                <option value="4:30">4:30</option>
+                                <option value="5:00">5:00</option>
+                                <option value="5:30">5:30</option>
+                                <option value="6:00">6:00</option>
+                                <option value="6:30">6:30</option>
+                                <option value="7:00">7:00</option>
+                                <option value="7:30">7:30</option>
+                                <option value="8:00">8:00</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option></select></td>
+    <td style="width:80px; height:20px"><select id="vondo" name="time" size="1">
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                                <option value="3:30">3:30</option>
+                                <option value="4:00">4:00</option>
+                                <option value="4:30">4:30</option>
+                                <option value="5:00">5:00</option>
+                                <option value="5:30">5:30</option>
+                                <option value="6:00">6:00</option>
+                                <option value="6:30">6:30</option>
+                                <option value="7:00">7:00</option>
+                                <option value="7:30">7:30</option>
+                                <option value="8:00">8:00</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option></select></td>
+    <td style="width:80px; height:20px"><select id="vonfr" name="time" size="1">
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                                <option value="3:30">3:30</option>
+                                <option value="4:00">4:00</option>
+                                <option value="4:30">4:30</option>
+                                <option value="5:00">5:00</option>
+                                <option value="5:30">5:30</option>
+                                <option value="6:00">6:00</option>
+                                <option value="6:30">6:30</option>
+                                <option value="7:00">7:00</option>
+                                <option value="7:30">7:30</option>
+                                <option value="8:00">8:00</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option></select></td>
+    <td style="width:80px; height:20px"><select id="vonsa" name="time" size="1">
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                                <option value="3:30">3:30</option>
+                                <option value="4:00">4:00</option>
+                                <option value="4:30">4:30</option>
+                                <option value="5:00">5:00</option>
+                                <option value="5:30">5:30</option>
+                                <option value="6:00">6:00</option>
+                                <option value="6:30">6:30</option>
+                                <option value="7:00">7:00</option>
+                                <option value="7:30">7:30</option>
+                                <option value="8:00">8:00</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option></select></td>
+    <td style="width:80px; height:20px"><select id="vonso" name="time" size="1">
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                                <option value="3:30">3:30</option>
+                                <option value="4:00">4:00</option>
+                                <option value="4:30">4:30</option>
+                                <option value="5:00">5:00</option>
+                                <option value="5:30">5:30</option>
+                                <option value="6:00">6:00</option>
+                                <option value="6:30">6:30</option>
+                                <option value="7:00">7:00</option>
+                                <option value="7:30">7:30</option>
+                                <option value="8:00">8:00</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option></select></td>
+</tr>
+    
+</table>
+<table id="öffnungszeitentabelle3" cellspacing="10px">
+<tr>
+    <form id="timepicker">
+    <td style="width:130px"><p>BIS </p></td>
+    <td style="width:80px; height:20px"><select id="bismo" name="time" size="1">
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                                <option value="3:30">3:30</option>
+                                <option value="4:00">4:00</option>
+                                <option value="4:30">4:30</option>
+                                <option value="5:00">5:00</option>
+                                <option value="5:30">5:30</option>
+                                <option value="6:00">6:00</option>
+                                <option value="6:30">6:30</option>
+                                <option value="7:00">7:00</option>
+                                <option value="7:30">7:30</option>
+                                <option value="8:00">8:00</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option></select></td>
+        
+   <td style="width:80px; height:20px"><select id="bisdi" name="time" size="1">
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                                <option value="3:30">3:30</option>
+                                <option value="4:00">4:00</option>
+                                <option value="4:30">4:30</option>
+                                <option value="5:00">5:00</option>
+                                <option value="5:30">5:30</option>
+                                <option value="6:00">6:00</option>
+                                <option value="6:30">6:30</option>
+                                <option value="7:00">7:00</option>
+                                <option value="7:30">7:30</option>
+                                <option value="8:00">8:00</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option></select></td>
+        <td style="width:80px; height:20px"><select id="bismi" name="time" size="1">
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                                <option value="3:30">3:30</option>
+                                <option value="4:00">4:00</option>
+                                <option value="4:30">4:30</option>
+                                <option value="5:00">5:00</option>
+                                <option value="5:30">5:30</option>
+                                <option value="6:00">6:00</option>
+                                <option value="6:30">6:30</option>
+                                <option value="7:00">7:00</option>
+                                <option value="7:30">7:30</option>
+                                <option value="8:00">8:00</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option></select></td>
+        <td style="width:80px; height:20px"><select id="bisdo" name="time" size="1">
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                                <option value="3:30">3:30</option>
+                                <option value="4:00">4:00</option>
+                                <option value="4:30">4:30</option>
+                                <option value="5:00">5:00</option>
+                                <option value="5:30">5:30</option>
+                                <option value="6:00">6:00</option>
+                                <option value="6:30">6:30</option>
+                                <option value="7:00">7:00</option>
+                                <option value="7:30">7:30</option>
+                                <option value="8:00">8:00</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option></select></td>
+        <td style="width:80px; height:20px"><select id="bisfr" name="time" size="1">
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                                <option value="3:30">3:30</option>
+                                <option value="4:00">4:00</option>
+                                <option value="4:30">4:30</option>
+                                <option value="5:00">5:00</option>
+                                <option value="5:30">5:30</option>
+                                <option value="6:00">6:00</option>
+                                <option value="6:30">6:30</option>
+                                <option value="7:00">7:00</option>
+                                <option value="7:30">7:30</option>
+                                <option value="8:00">8:00</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option></select></td>
+        <td style="width:80px; height:20px"><select id="bissa" name="time" size="1">
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                                <option value="3:30">3:30</option>
+                                <option value="4:00">4:00</option>
+                                <option value="4:30">4:30</option>
+                                <option value="5:00">5:00</option>
+                                <option value="5:30">5:30</option>
+                                <option value="6:00">6:00</option>
+                                <option value="6:30">6:30</option>
+                                <option value="7:00">7:00</option>
+                                <option value="7:30">7:30</option>
+                                <option value="8:00">8:00</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option></select></td>
+        <td style="width:80px; height:20px"><select id="bisso" name="time" size="1">
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                                <option value="3:30">3:30</option>
+                                <option value="4:00">4:00</option>
+                                <option value="4:30">4:30</option>
+                                <option value="5:00">5:00</option>
+                                <option value="5:30">5:30</option>
+                                <option value="6:00">6:00</option>
+                                <option value="6:30">6:30</option>
+                                <option value="7:00">7:00</option>
+                                <option value="7:30">7:30</option>
+                                <option value="8:00">8:00</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option></select></td>
+        </form>
+        </tr>
+    </table>
+    
+    <table id="durchgehendtabelle1" cellspacing="53px">
+        <tr>
+    <p id="textdurchgehend">DURCHGEHEND GEÖFFNET:</p>
+    <td style="width:130px; height:20px"><input type="button" onclick="durchgehendmoja()" value="Ja" class="durchgehendbuttons"><input type="button" onclick="durchgehendmonein()" value="nein" class="durchgehendbuttons"></td>
+    <td style="width:130px; height:20px"><input type="button" onclick="durchgehenddija()" value="Ja" class="durchgehendbuttons"><input type="button" onclick="durchgehenddinein()" value="nein" class="durchgehendbuttons"></td>
+    <td style="width:130px; height:20px"><input type="button" onclick="durchgehendmija()" value="Ja" class="durchgehendbuttons"><input type="button" onclick="durchgehendminein()" value="nein" class="durchgehendbuttons"></td>
+    <td style="width:130px; height:20px"><input type="button" onclick="durchgehenddoja()" value="Ja" class="durchgehendbuttons"><input type="button" onclick="durchgehenddonein()" value="nein" class="durchgehendbuttons"></td>
+    <td style="width:130px; height:20px"><input type="button" onclick="durchgehendfrja()" value="Ja" class="durchgehendbuttons"><input type="button" onclick="durchgehendfrnein()" value="nein" class="durchgehendbuttons"></td>
+    <td style="width:130px; height:20px"><input type="button" onclick="durchgehendsaja()" value="Ja" class="durchgehendbuttons"><input type="button" onclick="durchgehendsanein()" value="nein" class="durchgehendbuttons"></td>
+    <td style="width:130px; height:20px"><input type="button" onclick="durchgehendsoja()" value="Ja" class="durchgehendbuttons"><input type="button" onclick="durchgehendsonein()" value="nein" class="durchgehendbuttons"></td>
+</tr>
+    
+
+</table>
+    </div>
+
+
+              
+    <div id="öffnungszeitentabellediv2">
+  
+<table id="öffnungszeitentabelle2" cellspacing="10px">
+<tr>
+    <td style="width:130px"><p>VON</p></td>
+    <td style="width:80px; height:20px"><select id="vonmo2" name="time" size="1">
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                                <option value="3:30">3:30</option>
+                                <option value="4:00">4:00</option>
+                                <option value="4:30">4:30</option>
+                                <option value="5:00">5:00</option>
+                                <option value="5:30">5:30</option>
+                                <option value="6:00">6:00</option>
+                                <option value="6:30">6:30</option>
+                                <option value="7:00">7:00</option>
+                                <option value="7:30">7:30</option>
+                                <option value="8:00">8:00</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option></select></td>
+    <td style="width:80px; height:20px"><select id="vondi2" name="time" size="1">
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                                <option value="3:30">3:30</option>
+                                <option value="4:00">4:00</option>
+                                <option value="4:30">4:30</option>
+                                <option value="5:00">5:00</option>
+                                <option value="5:30">5:30</option>
+                                <option value="6:00">6:00</option>
+                                <option value="6:30">6:30</option>
+                                <option value="7:00">7:00</option>
+                                <option value="7:30">7:30</option>
+                                <option value="8:00">8:00</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option></select></td>
+    <td style="width:80px; height:20px"><select id="vonmi2" name="time" size="1">
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                                <option value="3:30">3:30</option>
+                                <option value="4:00">4:00</option>
+                                <option value="4:30">4:30</option>
+                                <option value="5:00">5:00</option>
+                                <option value="5:30">5:30</option>
+                                <option value="6:00">6:00</option>
+                                <option value="6:30">6:30</option>
+                                <option value="7:00">7:00</option>
+                                <option value="7:30">7:30</option>
+                                <option value="8:00">8:00</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option></select></td>
+    <td style="width:80px; height:20px"><select id="vondo2" name="time" size="1">
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                                <option value="3:30">3:30</option>
+                                <option value="4:00">4:00</option>
+                                <option value="4:30">4:30</option>
+                                <option value="5:00">5:00</option>
+                                <option value="5:30">5:30</option>
+                                <option value="6:00">6:00</option>
+                                <option value="6:30">6:30</option>
+                                <option value="7:00">7:00</option>
+                                <option value="7:30">7:30</option>
+                                <option value="8:00">8:00</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option></select></td>
+    <td style="width:80px; height:20px"><select id="vonfr2" name="time" size="1">
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                                <option value="3:30">3:30</option>
+                                <option value="4:00">4:00</option>
+                                <option value="4:30">4:30</option>
+                                <option value="5:00">5:00</option>
+                                <option value="5:30">5:30</option>
+                                <option value="6:00">6:00</option>
+                                <option value="6:30">6:30</option>
+                                <option value="7:00">7:00</option>
+                                <option value="7:30">7:30</option>
+                                <option value="8:00">8:00</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option></select></td>
+    <td style="width:80px; height:20px"><select id="vonsa2" name="time" size="1">
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                                <option value="3:30">3:30</option>
+                                <option value="4:00">4:00</option>
+                                <option value="4:30">4:30</option>
+                                <option value="5:00">5:00</option>
+                                <option value="5:30">5:30</option>
+                                <option value="6:00">6:00</option>
+                                <option value="6:30">6:30</option>
+                                <option value="7:00">7:00</option>
+                                <option value="7:30">7:30</option>
+                                <option value="8:00">8:00</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option></select></td>
+    <td style="width:80px; height:20px"><select id="vonso2" name="time" size="1">
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                                <option value="3:30">3:30</option>
+                                <option value="4:00">4:00</option>
+                                <option value="4:30">4:30</option>
+                                <option value="5:00">5:00</option>
+                                <option value="5:30">5:30</option>
+                                <option value="6:00">6:00</option>
+                                <option value="6:30">6:30</option>
+                                <option value="7:00">7:00</option>
+                                <option value="7:30">7:30</option>
+                                <option value="8:00">8:00</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option></select></td>
+</tr>
+    
+</table>
+<table id="öffnungszeitentabelle3" cellspacing="10px">
+<tr>
+    <form id="timepicker">
+    <td style="width:130px"><p>BIS </p></td>
+    <td style="width:80px; height:20px"><select id="bismo2" name="time" size="1">
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                                <option value="3:30">3:30</option>
+                                <option value="4:00">4:00</option>
+                                <option value="4:30">4:30</option>
+                                <option value="5:00">5:00</option>
+                                <option value="5:30">5:30</option>
+                                <option value="6:00">6:00</option>
+                                <option value="6:30">6:30</option>
+                                <option value="7:00">7:00</option>
+                                <option value="7:30">7:30</option>
+                                <option value="8:00">8:00</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option></select></td>
+        
+    <td style="width:80px; height:20px"><select id="bisdi2" name="time" size="1">
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                                <option value="3:30">3:30</option>
+                                <option value="4:00">4:00</option>
+                                <option value="4:30">4:30</option>
+                                <option value="5:00">5:00</option>
+                                <option value="5:30">5:30</option>
+                                <option value="6:00">6:00</option>
+                                <option value="6:30">6:30</option>
+                                <option value="7:00">7:00</option>
+                                <option value="7:30">7:30</option>
+                                <option value="8:00">8:00</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option></select></td>
+    <td style="width:80px; height:20px"><select id="bismi2" name="time" size="1">
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                                <option value="3:30">3:30</option>
+                                <option value="4:00">4:00</option>
+                                <option value="4:30">4:30</option>
+                                <option value="5:00">5:00</option>
+                                <option value="5:30">5:30</option>
+                                <option value="6:00">6:00</option>
+                                <option value="6:30">6:30</option>
+                                <option value="7:00">7:00</option>
+                                <option value="7:30">7:30</option>
+                                <option value="8:00">8:00</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option></select></td>
+    <td style="width:80px; height:20px"><select id="bisdo2" name="time" size="1">
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                                <option value="3:30">3:30</option>
+                                <option value="4:00">4:00</option>
+                                <option value="4:30">4:30</option>
+                                <option value="5:00">5:00</option>
+                                <option value="5:30">5:30</option>
+                                <option value="6:00">6:00</option>
+                                <option value="6:30">6:30</option>
+                                <option value="7:00">7:00</option>
+                                <option value="7:30">7:30</option>
+                                <option value="8:00">8:00</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option></select></td>
+    <td style="width:80px; height:20px"><select id="bisfr2" name="time" size="1">
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                                <option value="3:30">3:30</option>
+                                <option value="4:00">4:00</option>
+                                <option value="4:30">4:30</option>
+                                <option value="5:00">5:00</option>
+                                <option value="5:30">5:30</option>
+                                <option value="6:00">6:00</option>
+                                <option value="6:30">6:30</option>
+                                <option value="7:00">7:00</option>
+                                <option value="7:30">7:30</option>
+                                <option value="8:00">8:00</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option></select></td>
+    <td style="width:80px; height:20px"><select id="bissa2" name="time" size="1">
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                                <option value="3:30">3:30</option>
+                                <option value="4:00">4:00</option>
+                                <option value="4:30">4:30</option>
+                                <option value="5:00">5:00</option>
+                                <option value="5:30">5:30</option>
+                                <option value="6:00">6:00</option>
+                                <option value="6:30">6:30</option>
+                                <option value="7:00">7:00</option>
+                                <option value="7:30">7:30</option>
+                                <option value="8:00">8:00</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option></select></td>
+    <td style="width:80px; height:20px"><select id="bisso2" name="time" size="1">
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                                <option value="3:30">3:30</option>
+                                <option value="4:00">4:00</option>
+                                <option value="4:30">4:30</option>
+                                <option value="5:00">5:00</option>
+                                <option value="5:30">5:30</option>
+                                <option value="6:00">6:00</option>
+                                <option value="6:30">6:30</option>
+                                <option value="7:00">7:00</option>
+                                <option value="7:30">7:30</option>
+                                <option value="8:00">8:00</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option></select></td>
+        </form>
+        </tr>
+    </table>
+    
+
+    </div>
+
+                  
+<div id="geschlossen">
+
+    
+<table id="tabellegeschlossenetage" cellspacing="65px" >
+<form action="input_checkbox.htm" float="left" id="geschlossen">
+
+  <p>
+    <p id="textgeschlossen">AN FOLGENDEN TAGEN GESCHLOSSEN:</p>
+      
+    <td style="width:130px; height:20px"><input type="checkbox" name="tag" value="montag" id="mocheckbox" onclick="deaktivierenmo()"> </td>
+    <td style="width:120px; height:20px"><input type="checkbox" name="tag" value="dienstag" id="dicheckbox" onclick="deaktivierendi()"></td>
+    <td style="width:120px; height:20px"><input type="checkbox" name="tag" value="mittwoch" id="micheckbox" onclick="deaktivierenmi()"></td>
+     <td style="width:120px; height:20px"><input type="checkbox" name="tag" value="donnerstag" id="docheckbox" onclick="deaktivierendo()"></td>
+     <td style="width:120px; height:20px"><input type="checkbox" name="tag" value="freitag" id="frcheckbox" onclick="deaktivierenfr()"> </td>
+      <td style="width:120px; height:20px"><input type="checkbox" name="tag" value="samstag" id="sacheckbox" onclick="deaktivierensa()"> </td>
+      <td style="width:120px; height:20px"><input type="checkbox" name="tag" value="sonntag" id="socheckbox" onclick="deaktivierenso()"> </td>
+      </p>
+</form>
+    
+
+    
+    </table>
+                  </div>
+              
+              </div>
+
+      </div>
+      
+        <div id="cafe">
+            
+            <div id="cafe-links">
+            
+            <p id="cafe-stil">STIL</p>
+            
+            <p id="cafe-stil-auswahl-1" onclick="cafestilauswahl1fun()">gemütlich</p>
+            <p id="cafe-stil-auswahl-2" onclick="cafestilauswahl2fun()">laut</p>
+            <p id="cafe-stil-auswahl-3" onclick="cafestilauswahl3fun()">beides</p>
+            
+            <p id="cafe-leute">LEUTE</p>
+            
+            <p id="cafe-leute-auswahl-1" onclick="cafeleuteauswahl1fun()">jung</p>
+            <p id="cafe-leute-auswahl-2" onclick="cafeleuteauswahl2fun()">durchmischt</p>
+            <p id="cafe-leute-auswahl-3" onclick="cafeleuteauswahl3fun()">erfahren</p>
+
+            </div>
+            
+            <div id="cafe-rechts">
+                
+            <p id="cafe-platz">AUSSENSITZPLATZ</p>
+            
+            <p id="cafe-platz-auswahl-1" onclick="cafeplatzauswahl1fun()">Ja</p>
+            <p id="cafe-platz-auswahl-2" onclick="cafeplatzauswahl2fun()">Nein</p>
+                
+            <p id="cafe-rauchen">RAUCHEN</p>
+            
+            <p id="cafe-rauchen-auswahl-1" onclick="caferauchenauswahl1fun()">Ja</p>
+            <p id="cafe-rauchen-auswahl-2" onclick="caferauchenauswahl2fun()">Nein</p>
+            <p id="cafe-rauchen-auswahl-3" onclick="caferauchenauswahl3fun()">Beides</p>
+
+                
+            </div>
+            
+            <div id="cafe-unten">
+                
+                <p id="cafe-unten-titel">Organisieren Sie in Ihrerem Cafe Events?</p>
+                <p id="cafe-unten-text">Klicken Sie auf das Plus darunter, wählen sie das Datum vom Ereignis und füllen Sie die Lücken aus.</p>
+                
+                <p id="cafe-event-auswahl-1" onclick="cafeeventauswahl1fun()">Ja</p>
+                <p id="cafe-event-auswahl-2" onclick="cafeeventauswahl2fun()">Nein</p>
+                
+                
+            </div>
+      </div>
+
+
+
+            <div id="cafe-event" style="display:none">
+                
+                
+                <div id="cafe-event-links">
+               <div id="cafe-event-tag"><p>Freitag</p></div>
+               <div id="cafe-event-datum">     
+                    
+                <form>
+                    <input id="cafe-event-datepicker" />
+                </form>
+                </div>
+                </div>
+                
+                
+                <div id="cafe-event-mitte">
+                
+                
+                
+                <div id="cafe-event-titel"><p>TITEL</p></div>               
+                <div id="cafe-event-titel-input-div"><input id="cafe-event-titel-input" type="text"></div>
+                    
+                <div id="cafe-event-titel"><p>BESCHREIBUNG</p></div>               
+                    <div id="cafe-event-besch-input-div"><textarea id="cafe-event-besch-input"></textarea></div>
+
+                    
+                </div>
+
+                
+                
+                
+                
+                
+            <div id="cafe-event-rechts">
+
+                <div id="cafe-event-rechts-von-text"><p>VON</p></div>
+                
+               <div id="cafe-event-rechts-von-select"><select id="cafe-event-von-select">
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                                <option value="3:30">3:30</option>
+                                <option value="4:00">4:00</option>
+                                <option value="4:30">4:30</option>
+                                <option value="5:00">5:00</option>
+                                <option value="5:30">5:30</option>
+                                <option value="6:00">6:00</option>
+                                <option value="6:30">6:30</option>
+                                <option value="7:00">7:00</option>
+                                <option value="7:30">7:30</option>
+                                <option value="8:00">8:00</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option></select></div> 
+                
+          <div id="cafe-event-rechts-bis-text"><p>BIS</p></div>
+                
+               <div id="cafe-event-rechts-bis-select"><select id="cafe-event-bis-select">
+                                <option value="0:30">0:30</option>
+                                <option value="1:00">1:00</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:00">2:00</option>
+                                <option value="2:30">2:30</option>
+                                <option value="3:00">3:00</option>
+                                <option value="3:30">3:30</option>
+                                <option value="4:00">4:00</option>
+                                <option value="4:30">4:30</option>
+                                <option value="5:00">5:00</option>
+                                <option value="5:30">5:30</option>
+                                <option value="6:00">6:00</option>
+                                <option value="6:30">6:30</option>
+                                <option value="7:00">7:00</option>
+                                <option value="7:30">7:30</option>
+                                <option value="8:00">8:00</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option></select></div> 
+                
+                <div id="cafe-event-rechts-unten">
+                <p id="cafe-event-wie">Das Event ist</p>
+                <p id="cafe-event-einmalig" onclick="cafeeventeinmaligfun()">einmalig</p>
+                <p id="cafe-event-wiederholend" onclick="cafeeventwiederholendfun()">wiederholend</p>
+                </div>
+                
+                
+                </div>
+                
+
+    
+            </div>
+
+                <div id="cafe-plus" style="display:none">
+                <p id="cafe-plus-sign" onclick="pluseventcafe()">+</p>
+                </div>
+
+                
+          
+      
+        <div id="mittag">
+            <p id="mittag-titel">MITTAGSMENÜ</p>
+            
+            <div id="menümo">
+                <p onclick="menümosperren()" id="menümo-titel">MONTAG</p>
+               <div id="menümo-datum-div"><label id="menümo-tag">21.Juni</label></div> 
+                <p id="menümo-preis">PREIS</p>
+                
+                <div id="menümo1">
+                <label id="menümo1-text">MENÜ 1:</label>
+                <div id="menümo1-input-div"><input id="menümo1-input-titel" type="text"><input id="menümo1-input-preis" type="text"></div> 
+                </div>
+                
+                <div id="menümo2" style="display:none">
+                <label id="menümo2-text">MENÜ 2:</label>
+                <div id="menümo2-input-div"><input id="menümo2-input-titel" type="text"><input id="menümo2-input-preis" type="text"></div>
+                </div>
+                
+                <div id="menümo3" style="display:none">
+                <label id="menümo3-text">MENÜ 3:</label>
+                <div id="menümo3-input-div"><input id="menümo3-input-titel" type="text"><input id="menümo3-input-preis" type="text"></div> 
+                </div>
+                
+                                <div id="menümo4" style="display:none">
+                <label id="menümo4-text">MENÜ 4:</label>
+                <div id="menümo4-input-div"><input id="menümo4-input-titel" type="text"><input id="menümo4-input-preis" type="text"></div>
+                </div>
+                
+                                <div id="menümo5" style="display:none">
+                <label id="menümo5-text">MENÜ 5:</label>
+                <div id="menümo5-input-div"><input id="menümo5-input-titel" type="text"><input id="menümo5-input-preis" type="text"></div> 
+                </div>
+            
+            </div>
+            
+            <div id="menümo1-plus" onclick="menümo1plus()" ><p class="menümo-plus-text" >+</p></div>
+            <div style="display:none" id="menümo2-plus" onclick="menümo2plus()" ><p class="menümo-plus-text">+</p></div>
+            <div style="display:none" id="menümo3-plus" onclick="menümo3plus()" ><p class="menümo-plus-text">+</p></div>
+            <div style="display:none" id="menümo4-plus" onclick="menümo4plus()" ><p class="menümo-plus-text">+</p></div>
+            <div style="display:none" id="menümo5-plus" onclick="menümo5plus()" ><p class="menümo-plus-text">+</p></div>
+            
+            <div style="display:none"  onclick="menümo2minus()" id="menümo2-minus"><p class="menümo-plus-text">-</p></div>
+            <div style="display:none"  onclick="menümo3minus()" id="menümo3-minus"><p class="menümo-plus-text">-</p></div>
+            <div style="display:none"  onclick="menümo4minus()" id="menümo4-minus"><p class="menümo-plus-text">-</p></div> 
+            <div style="display:none"  onclick="menümo5minus()" id="menümo5-minus"><p class="menümo-plus-text">-</p></div>
+            
+            
+            <div id="menüdi">
+                <p onclick="menüdisperren()" id="menüdi-titel">DIENSTAG</p>
+               <div id="menüdi-datum-div"><label id="menüdi-tag">22.Juni</label></div> 
+                <p id="menüdi-preis">PREIS</p>
+                
+                <div id="menüdi1">
+                <label id="menüdi1-text">MENÜ 1:</label>
+                <div id="menüdi1-input-div"><input id="menüdi1-input-titel" type="text"><input id="menüdi1-input-preis" type="text"></div> 
+                </div>
+                
+                <div id="menüdi2" style="display:none">
+                <label id="menüdi2-text">MENÜ 2:</label>
+                <div id="menüdi2-input-div"><input id="menüdi2-input-titel" type="text"><input id="menüdi2-input-preis" type="text"></div>
+                </div>
+                
+                <div id="menüdi3" style="display:none">
+                <label id="menüdi3-text">MENÜ 3:</label>
+                <div id="menüdi3-input-div"><input id="menüdi3-input-titel" type="text"><input id="menüdi3-input-preis" type="text"></div> 
+                </div>
+                
+                                <div id="menüdi4" style="display:none">
+                <label id="menüdi4-text">MENÜ 4:</label>
+                <div id="menüdi4-input-div"><input id="menüdi4-input-titel" type="text"><input id="menüdi4-input-preis" type="text"></div>
+                </div>
+                
+                                <div id="menüdi5" style="display:none">
+                <label id="menüdi5-text">MENÜ 5:</label>
+                <div id="menüdi5-input-div"><input id="menüdi5-input-titel" type="text"><input id="menüdi5-input-preis" type="text"></div> 
+                </div>
+            
+            </div>
+            
+            <div id="menüdi1-plus" onclick="menüdi1plus()" ><p class="menüdi-plus-text" >+</p></div>
+            <div style="display:none" id="menüdi2-plus" onclick="menüdi2plus()" ><p class="menüdi-plus-text">+</p></div>
+            <div style="display:none" id="menüdi3-plus" onclick="menüdi3plus()" ><p class="menüdi-plus-text">+</p></div>
+            <div style="display:none" id="menüdi4-plus" onclick="menüdi4plus()" ><p class="menüdi-plus-text">+</p></div>
+            <div style="display:none" id="mmenüdi5-plus" onclick="menüdi5plus()" ><p class="menüdi-plus-text">+</p></div>
+            
+            <div style="display:none"  onclick="menüdi2minus()" id="menüdi2-minus"><p class="menüdi-plus-text">-</p></div>
+            <div style="display:none"  onclick="menüdi3minus()" id="menüdi3-minus"><p class="menüdi-plus-text">-</p></div>
+            <div style="display:none"  onclick="menüdi4minus()" id="menüdi4-minus"><p class="menüdi-plus-text">-</p></div> 
+            <div style="display:none"  onclick="menüdi5minus()" id="menüdi5-minus"><p class="menüdi-plus-text">-</p></div>
+      
+
+        </div>
+            
+                  
+
+            
+            
+
+      
+       <div id="restaurant2">
+           
+      
+      </div>
+      
+       <div id="bar1">
+      
+      </div>
+      
+       <div id="bar2">
+      
+      </div>
+    
+    
+</body>

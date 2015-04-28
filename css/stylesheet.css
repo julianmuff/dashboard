@@ -1,0 +1,1413 @@
+@font-face {
+	font-family: font;
+	src: url(../src/RBNo2Light.otf);
+}
+
+
+#html
+
+{
+    overflow-x: hidden;
+}
+
+
+#body
+
+{
+    background-color: white;
+    width: 1000px;
+    height: 5000px;
+    overflow-x: hidden;
+    color: white;
+	font-weight: 100;
+
+}
+
+#ring
+
+{
+  position: relative;
+  top: -400px;
+  left: -26%;
+
+  width: 150%;
+  height: 800px;
+  border: 25px solid white;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  background-color: rgb(245, 184, 69);
+  color: black;
+
+}
+
+#allgemein
+
+{
+    margin-top: -1000px;
+    width: 1200px;
+    border: 0px;
+    height: 1300px;
+    background-color: rgb(14, 56, 71);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cafe {
+    
+    background-color: rgb(80, 119, 212);
+    width: 1200px;
+    height: 400px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#cafe-links {
+    
+
+    width: 500px;
+    height: 300px;
+    margin-left: -70px;
+    
+}
+
+#cafe-stil {
+    font-size: 40px;
+    color: white;
+    margin-left: 170px;
+    padding-top: 40px;
+    width: 50px;
+}
+
+#cafe-stil-balken {
+    
+    width: 400px;
+    height: 0.3px;
+    background-color: white;
+    margin-left: 200px;
+
+}
+
+#cafe-stil-auswahl-1 {
+    
+    background: transparent;
+   border: none;
+   border-radius: 0;
+   -webkit-appearance: none;
+   color: black;
+   font-family: 'font', sans-serif;
+   font-size: 40px;
+    margin-top: -70px;
+    margin-left: 325px;
+    width: 100px;
+    height: 30px;
+
+}
+
+#cafe-stil-auswahl-2 {
+    
+    background: transparent;
+   border: none;
+   border-radius: 0;
+   -webkit-appearance: none;
+   color: black;
+   font-family: 'font', sans-serif;
+   font-size: 40px;
+    margin-top: -70px;
+    margin-left: 445px;
+        width: 40px;
+    height: 30px;
+
+}
+
+#cafe-stil-auswahl-3 {
+    
+    background: transparent;
+   border: none;
+   border-radius: 0;
+   -webkit-appearance: none;
+   color: black;
+   font-family: 'font', sans-serif;
+   font-size: 40px;
+    margin-top: -70px;
+    margin-left: 500px;
+    width: 70px;
+    height: 30px;
+
+}
+
+#cafe-leute {
+    font-size: 40px;
+    color: white;
+    margin-left: 170px;
+    padding-top: 20px;
+    width: 50px;
+}
+
+#cafe-leute-balken {
+    
+    width: 400px;
+    height: 0.3px;
+    background-color: white;
+    margin-left: 200px;
+
+}
+
+#cafe-leute-auswahl-1 {
+    
+    background: transparent;
+   border: none;
+   border-radius: 0;
+   -webkit-appearance: none;
+   color: black;
+   font-family: 'font', sans-serif;
+   font-size: 40px;
+    margin-top: -70px;
+    margin-left: 270px;
+    width: 100px;
+    height: 30px;
+
+}
+
+#cafe-leute-auswahl-2 {
+    
+    background: transparent;
+   border: none;
+   border-radius: 0;
+   -webkit-appearance: none;
+   color: black;
+   font-family: 'font', sans-serif;
+   font-size: 40px;
+    margin-top: -70px;
+    margin-left: 330px;
+        width: 120px;
+    height: 30px;
+
+}
+
+#cafe-leute-auswahl-3 {
+    
+    background: transparent;
+   border: none;
+   border-radius: 0;
+   -webkit-appearance: none;
+   color: black;
+   font-family: 'font', sans-serif;
+   font-size: 40px;
+    margin-top: -70px;
+    margin-left: 480px;
+    width: 70px;
+    height: 30px;
+
+}
+
+#cafe-rechts {
+
+    width: 500px;
+    height: 300px;
+    margin-left: 650px;
+    margin-top: -260px;
+    
+    
+}
+
+
+#cafe-platz {
+    font-size: 40px;
+    color: white;
+    width: 210px;
+    margin-top: 0px;
+}
+
+#cafe-platz-balken {
+    
+    width: 400px;
+    height: 0.3px;
+    background-color: white;
+    margin-left: 200px;
+
+}
+
+#cafe-platz-auswahl-1 {
+    
+    background: transparent;
+   border: none;
+   border-radius: 0;
+   -webkit-appearance: none;
+   color: black;
+   font-family: 'font', sans-serif;
+   font-size: 40px;
+    margin-top: -70px;
+    margin-left: 350px;
+    width: 100px;
+    height: 30px;
+
+}
+
+#cafe-platz-auswahl-2 {
+    
+    background: transparent;
+   border: none;
+   border-radius: 0;
+   -webkit-appearance: none;
+   color: black;
+   font-family: 'font', sans-serif;
+   font-size: 40px;
+    margin-top: -70px;
+    margin-left: 400px;
+        width: 120px;
+    height: 30px;
+
+}
+
+#cafe-rauchen {
+    font-size: 40px;
+    color: white;
+    width: 210px;
+    padding-top: 20px;
+}
+
+#cafe-rauchen-balken {
+    
+    width: 400px;
+    height: 0.3px;
+    background-color: white;
+    margin-left: 200px;
+
+}
+
+#cafe-rauchen-auswahl-1 {
+    
+    background: transparent;
+   border: none;
+   border-radius: 0;
+   -webkit-appearance: none;
+   color: black;
+   font-family: 'font', sans-serif;
+   font-size: 40px;
+    margin-top: -70px;
+    margin-left: 260px;
+    width: 100px;
+    height: 30px;
+
+}
+
+#cafe-rauchen-auswahl-2 {
+    
+    background: transparent;
+   border: none;
+   border-radius: 0;
+   -webkit-appearance: none;
+   color: black;
+   font-family: 'font', sans-serif;
+   font-size: 40px;
+    margin-top: -70px;
+    margin-left: 310px;
+        width: 120px;
+    height: 30px;
+
+}
+
+#cafe-rauchen-auswahl-3 {
+    
+    background: transparent;
+   border: none;
+   border-radius: 0;
+   -webkit-appearance: none;
+   color: black;
+   font-family: 'font', sans-serif;
+   font-size: 40px;
+    margin-top: -70px;
+    margin-left: 380px;
+        width: 120px;
+    height: 30px;
+
+}
+
+#cafe-unten {
+    
+    width: 900px;
+    height: 200px;
+
+    margin-left: 100px;
+    margin-top: -150px;
+}
+
+#cafe-unten-titel {
+    
+    font-size: 40px;
+    color: white;
+}
+
+#cafe-unten-text {
+    font-size: 25px;
+    color: white;
+
+}
+
+#cafe-event-auswahl-1 {
+    
+    background: transparent;
+   border: none;
+   border-radius: 0;
+   -webkit-appearance: none;
+   color: black;
+   font-family: 'font', sans-serif;
+   font-size: 40px;
+    margin-top: -110px;
+    margin-left: 480px;
+        width: 120px;
+    height: 30px;
+
+}
+
+#cafe-event-auswahl-2 {
+    
+    background: transparent;
+   border: none;
+   border-radius: 0;
+   -webkit-appearance: none;
+   color: black;
+   font-family: 'font', sans-serif;
+   font-size: 40px;
+    margin-top: -70px;
+    margin-left: 530px;
+        width: 120px;
+    height: 30px;
+
+}
+
+#cafe-plus {
+    margin-left: 350px;
+    margin-top: -120px;
+    height: 50px;
+
+    
+}
+
+#cafe-plus-sign {
+    
+    font-size: 200px;
+    color: blue;
+}
+
+
+#cafe-event {
+    
+    width: 1200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-color: rgb(80, 119, 212);
+}
+
+#cafe-event-mitte {
+    margin-left: 300px;
+    margin-top: -100px;
+    width: 400px;
+}
+
+#cafe-event-titel {
+    
+    color: white;
+    font-size: 30px;
+
+    width: 50px;
+    height: 30px;
+}
+
+
+
+#cafe-event-titel-input-div {
+    
+    margin-left: 150px;
+    margin-top: -30px;
+    padding-top: 0px;
+    width: 300px;
+}
+
+#cafe-event-titel-input {
+    width: 300px;
+}
+
+#cafe-event-besch-input-div {
+    
+    margin-left: 150px;
+    margin-top: -30px;
+    padding-top: 0px;
+    width: 300px;
+}
+
+#cafe-event-besch-input {
+    width: 300px;
+    height: 70px;
+}
+
+#cafe-event-rechts {
+
+    width: 300px;
+    height: 300px;
+    margin-left: 800px;
+    margin-top: -150px;
+}
+
+
+#cafe-event-rechts-von-select {
+    margin-left: 60px;
+    margin-top: -30px;
+
+}
+
+#cafe-event-rechts-von-text {
+    color: white;
+    font-size: 30px;
+    width: 50px;
+    height: 30px;
+}
+
+#cafe-event-rechts-bis-select {
+    margin-left: 200px;
+    margin-top: -30px;
+
+}
+
+#cafe-event-rechts-bis-text {
+    color: white;
+    font-size: 30px;
+    width: 50px;
+    height: 30px;
+    margin-left: 150px;
+    margin-top: -50px;
+}
+
+#cafe-event-wie {
+    color: white;
+    font-size: 30px;
+}
+
+#cafe-event-einmalig {
+    color: black;
+    font-size: 30px;
+    margin-top: -20px;
+}
+
+#cafe-event-wiederholend {
+    color: black;
+    font-size: 30px;
+    margin-left: 85px;
+    margin-top: -55px;
+}
+
+#cafe-event-links {
+    margin-left: 100px;
+    padding-top: 10px;
+
+    width: 100px;
+    height: 100px;
+}
+
+#cafe-event-datum {
+    background: transparent;
+    width: 50px;
+    margin-left: 0px;
+    margin-top: -20px;
+}
+
+#cafe-event-datepicker {
+
+    width: 80px;
+
+}
+
+#cafe-event-tag {
+    color: white;
+    font-size: 30px;
+}
+
+#info
+
+{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 400px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+
+}
+
+#boem
+
+{
+    font-size: 90px;
+
+}
+
+#daten
+
+{
+    margin-top: -130px;
+    width: 300px;
+}
+
+
+
+.main_info
+
+{
+
+    font-size: 25px;
+    font-family: 'font', sans-serif;
+    padding-left: 150px;
+
+}
+
+#namegeschäft
+
+{
+    margin-top: -60px;
+
+}
+
+#name
+
+{
+    font-size: 40px;
+    font-family: 'font', sans-serif;
+
+}
+
+#beschriebe
+
+{
+
+    margin-top: -200px;
+    width: 1200px;
+    margin-left: 0px;
+
+
+}
+
+#beschreibdeutsch
+
+{
+    font-size: 30px;
+    width: 350px;
+    height: 30px;
+   margin-top: 300px;
+    padding-top: 400px;
+    padding-left: 50px;
+    color: white;
+}
+
+#beschreibenglisch
+
+{
+    font-size: 30px;
+    width: 350px;
+    height: 30px;
+    margin-top: -30px;
+    padding-left: 600px;
+    color: white;
+}
+
+textarea {
+
+    resize: none;
+
+}
+ 
+#textdeutschdiv {
+    padding-left: 50px;
+}
+
+#textdeutsch
+
+{
+    color: black;
+    font-size: 20px;
+    width: 550px;
+    height: 200px;
+    font: 'font', sans-sarif;
+}
+
+#textenglischdiv {
+    padding-left: 600px;
+    margin-top: -140px;
+}
+
+#textenglisch
+
+{
+    color: black;
+    font-size: 20px;
+    width: 550px;
+    height: 200px;
+
+
+
+}
+
+#bilder
+
+{
+    color: white;
+    font-size: 30px;
+    width: 500px;
+    height: 200px;
+    margin-top: 0px;
+    padding-left: 50px;
+}
+
+#öffnungszeiten
+
+{
+    color: white;
+    font-size: 30px;
+    width: 500px;
+    height: 200px;
+    margin-top: -190px;
+    padding-left: 600px;
+}
+
+
+
+#geschlossen
+
+{
+
+    color: white;
+    font-size: 25px;
+    padding-left: 600px;
+    margin-top: -0px;
+    float: left;
+    width: 600px;
+
+    
+}
+
+#tabellegeschlossenetage
+
+{
+
+    margin-top: -120px;
+    margin-left: 30px;
+}
+
+#öffnungszeitentabellediv
+
+{
+    padding-left: 570px;
+    margin-top: -220px;
+}
+
+#öffnungszeitentabellediv2
+
+{
+    padding-left: 570px;
+    margin-top: -300px;
+    
+}
+#öffnungszeitentabelle1
+
+{
+    font-size: 25px;
+    width: 500px;
+    height: 200px;
+    margin-top: -180px;
+    
+    color: white;
+}
+
+#öffnungszeitentabelle2
+
+{
+    font-size: 25px;
+    width: 500px;
+    height: 200px;
+    margin-top: -150px;
+padding-left: 30px;
+    color: white;
+}
+
+#öffnungszeitentabelle3
+
+{
+    font-size: 25px;
+    width: 500px;
+    height: 200px;
+    margin-top: -140px;
+padding-left: 35px;
+    color: white;
+}
+
+#durchgehendtabelle1
+
+{
+    font-size: 25px;
+    width: 500px;
+    height: 200px;
+    margin-top: -120px;
+padding-left: 60px;
+    color: white;
+}
+
+.durchgehendbuttons {
+        float: left;
+   background: transparent;
+   width: 30px;
+
+   border: none;
+   border-radius: 0;
+   height: 30px;
+   -webkit-appearance: none;
+   color: white;
+   font-family: 'font', sans-serif;
+   font-size: 20px;
+
+
+    
+}
+
+#textdurchgehend {
+    width: 190px;
+   font-family: 'font', sans-serif;
+   font-size: 25px;
+    margin-left: -100px;
+    color: white;
+    margin-top: 30px;
+
+    
+}
+
+#textgeschlossen {
+    width: 280px;
+
+    margin-left: -210px;
+}
+
+.infos
+
+{
+    color: black;
+    font-size: 40px;
+}
+
+#bilderupload
+
+{
+    border: 5px solid white;
+    width: 400px;
+    height: 100px;
+    margin-top: -150px;
+    margin-left: 50px;
+}
+
+
+
+.image-upload > input
+{
+    display: none;
+}
+
+
+#mittag {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    height: 900px;
+    width: 1200px;
+    background-color: red;
+}
+
+#mittag-titel {
+    color: white;
+    font-size: 50px;
+    margin-left: 450px;
+    padding-top: 50px;
+}
+
+#menümo {
+    
+
+    width: 800px;
+    height: 100px;
+    margin-left: 170px;
+
+
+}
+
+#menümo-titel {
+    
+    color: white;
+    font-size: 25px;
+    height: 45px;
+    width: 50px;
+
+}
+
+#menümo-tag {
+    
+    color: white;
+    font-size: 20px;
+
+    height: 20px;
+    width: 50px;
+    font-family: 'font', sans-serif;
+}
+
+#menümo-preis {
+    color: white;
+    font-size: 20px;
+    margin-left: 750px;
+    margin-top: -90px;
+}
+
+#menümo-datum-div {
+    
+    margin-top: -30px;
+    
+}
+
+#menümo1 {
+    margin-top: -20px;
+    width: 900px; 
+}
+
+#menümo1-text {
+    color: white;
+    font-size: 20px;
+    margin-left: 150px;
+    width: 30px;
+    height: 20px;
+    
+}
+
+#menümo1-input-div {
+    margin-left: 210px;
+    margin-top: -25px;
+    
+}
+
+#menümo1-input-titel {
+
+    width: 500px;
+    border: none;
+    height: 18px;
+}
+
+#menümo1-input-preis {
+
+    margin-left: 20px;
+    width: 50px;
+    border: none;
+    height: 18px;
+}
+
+#menümo1-plus {
+    margin-left: 240px;
+    margin-top: -160px;
+    width: 20px;
+    height: 20px;
+}
+
+.menümo-plus-text {
+    color: white;
+    font-size: 60px;
+}
+
+
+
+#menümo2 {
+    margin-top: 10px;
+    width: 900px; 
+}
+
+#menümo2-text {
+    color: white;
+    font-size: 20px;
+    margin-left: 150px;
+    width: 30px;
+    height: 20px;
+    
+}
+
+#menümo2-input-div {
+    margin-left: 210px;
+    margin-top: -25px;
+    
+}
+
+#menümo2-input-titel {
+
+    width: 500px;
+    border: none;
+    height: 18px;
+}
+
+#menümo2-input-preis {
+
+    margin-left: 20px;
+    width: 50px;
+    border: none;
+    height: 18px;
+}
+
+#menümo2-plus {
+    margin-left: 240px;
+    margin-top: -160px;
+        width: 20px;
+    height: 20px;
+}
+
+#menümo2-minus {
+    margin-left: 970px;
+    margin-top: -55px;
+        width: 20px;
+    height: 20px;
+}
+
+#menümo3 {
+    margin-top: 10px;
+    width: 900px; 
+}
+
+#menümo3-text {
+    color: white;
+    font-size: 20px;
+    margin-left: 150px;
+    width: 30px;
+    height: 20px;
+    
+}
+
+#menümo3-input-div {
+    margin-left: 210px;
+    margin-top: -25px;
+    
+}
+
+#menümo3-input-titel {
+
+    width: 500px;
+    border: none;
+    height: 18px;
+}
+
+#menümo3-input-preis {
+
+    margin-left: 20px;
+    width: 50px;
+    border: none;
+    height: 18px;
+}
+
+#menümo3-plus {
+    margin-left: 240px;
+    margin-top: -160px;
+        width: 20px;
+    height: 20px;
+}
+
+#menümo3-minus {
+    margin-left: 970px;
+    margin-top: -25px;
+        width: 20px;
+    height: 20px;
+}
+
+
+
+#menümo4 {
+    margin-top: 10px;
+    width: 900px; 
+}
+
+#menümo4-text {
+    color: white;
+    font-size: 20px;
+    margin-left: 150px;
+    width: 30px;
+    height: 20px;
+    
+}
+
+#menümo4-input-div {
+    margin-left: 210px;
+    margin-top: -25px;
+    
+}
+
+#menümo4-input-titel {
+
+    width: 500px;
+    border: none;
+    height: 18px;
+}
+
+#menümo4-input-preis {
+
+    margin-left: 20px;
+    width: 50px;
+    border: none;
+    height: 18px;
+}
+
+#menümo4-plus {
+    margin-left: 240px;
+    margin-top: -160px;
+        width: 20px;
+    height: 20px;
+}
+
+#menümo4-minus {
+    margin-left: 970px;
+    margin-top: 50px;
+        width: 20px;
+    height: 20px;
+}
+
+#menümo5 {
+    margin-top: 10px;
+    width: 900px; 
+}
+
+#menümo5-text {
+    color: white;
+    font-size: 20px;
+    margin-left: 150px;
+    width: 30px;
+    height: 20px;
+    
+}
+
+#menümo5-input-div {
+    margin-left: 210px;
+    margin-top: -25px;
+    
+}
+
+#menümo5-input-titel {
+
+    width: 500px;
+    border: none;
+    height: 18px;
+}
+
+#menümo5-input-preis {
+
+    margin-left: 20px;
+    width: 50px;
+    border: none;
+    height: 18px;
+}
+
+#menümo5-plus {
+    margin-left: 240px;
+    margin-top: -160px;
+        width: 20px;
+    height: 20px;
+}
+
+#menümo5-minus {
+    margin-left: 970px;
+    margin-top: 95px;
+        width: 20px;
+    height: 20px;
+}
+
+#menüdi {
+    
+
+    width: 800px;
+    height: 100px;
+    margin-left: 170px;
+    margin-top: 80px;
+
+
+}
+
+#menüdi-titel {
+    
+    color: white;
+    font-size: 25px;
+    height: 45px;
+    width: 50px;
+
+}
+
+#menüdi-tag {
+    
+    color: white;
+    font-size: 20px;
+
+    height: 20px;
+    width: 50px;
+    font-family: 'font', sans-serif;
+}
+
+#menüdi-preis {
+    color: white;
+    font-size: 20px;
+    margin-left: 750px;
+    margin-top: -90px;
+}
+
+#menüdi-datum-div {
+    
+    margin-top: -30px;
+    
+}
+
+#menüdi1 {
+    margin-top: -20px;
+    width: 900px; 
+}
+
+#menüdi1-text {
+    color: white;
+    font-size: 20px;
+    margin-left: 150px;
+    width: 30px;
+    height: 20px;
+    
+}
+
+#menüdi1-input-div {
+    margin-left: 210px;
+    margin-top: -25px;
+    
+}
+
+#menüdi1-input-titel {
+
+    width: 500px;
+    border: none;
+    height: 18px;
+}
+
+#menüdi1-input-preis {
+
+    margin-left: 20px;
+    width: 50px;
+    border: none;
+    height: 18px;
+}
+
+#menüdi1-plus {
+    margin-left: 240px;
+    margin-top: -160px;
+    width: 20px;
+    height: 20px;
+}
+
+.menüdi-plus-text {
+    color: white;
+    font-size: 60px;
+}
+
+
+
+#menüdi2 {
+    margin-top: 10px;
+    width: 900px; 
+}
+
+#menüdi2-text {
+    color: white;
+    font-size: 20px;
+    margin-left: 150px;
+    width: 30px;
+    height: 20px;
+    
+}
+
+#menüdi2-input-div {
+    margin-left: 210px;
+    margin-top: -25px;
+    
+}
+
+#menüdi2-input-titel {
+
+    width: 500px;
+    border: none;
+    height: 18px;
+}
+
+#menüdi2-input-preis {
+
+    margin-left: 20px;
+    width: 50px;
+    border: none;
+    height: 18px;
+}
+
+#menüdi2-plus {
+    margin-left: 240px;
+    margin-top: -160px;
+        width: 20px;
+    height: 20px;
+}
+
+#menüdi2-minus {
+    margin-left: 970px;
+    margin-top: -55px;
+        width: 20px;
+    height: 20px;
+}
+
+#menüdi3 {
+    margin-top: 10px;
+    width: 900px; 
+}
+
+#menüdi3-text {
+    color: white;
+    font-size: 20px;
+    margin-left: 150px;
+    width: 30px;
+    height: 20px;
+    
+}
+
+#menüdi3-input-div {
+    margin-left: 210px;
+    margin-top: -25px;
+    
+}
+
+#menüdi3-input-titel {
+
+    width: 500px;
+    border: none;
+    height: 18px;
+}
+
+#menüdi3-input-preis {
+
+    margin-left: 20px;
+    width: 50px;
+    border: none;
+    height: 18px;
+}
+
+#menüdi3-plus {
+    margin-left: 240px;
+    margin-top: -160px;
+        width: 20px;
+    height: 20px;
+}
+
+#menüdi3-minus {
+    margin-left: 970px;
+    margin-top: -25px;
+        width: 20px;
+    height: 20px;
+}
+
+
+
+#menüdi4 {
+    margin-top: 10px;
+    width: 900px; 
+}
+
+#menüdi4-text {
+    color: white;
+    font-size: 20px;
+    margin-left: 150px;
+    width: 30px;
+    height: 20px;
+    
+}
+
+#menüdi4-input-div {
+    margin-left: 210px;
+    margin-top: -25px;
+    
+}
+
+#menüdi4-input-titel {
+
+    width: 500px;
+    border: none;
+    height: 18px;
+}
+
+#menüdi4-input-preis {
+
+    margin-left: 20px;
+    width: 50px;
+    border: none;
+    height: 18px;
+}
+
+#menüdi4-plus {
+    margin-left: 240px;
+    margin-top: -160px;
+        width: 20px;
+    height: 20px;
+}
+
+#menüdi4-minus {
+    margin-left: 970px;
+    margin-top: 50px;
+        width: 20px;
+    height: 20px;
+}
+
+#menüdi5 {
+    margin-top: 10px;
+    width: 900px; 
+}
+
+#menüdi5-text {
+    color: white;
+    font-size: 20px;
+    margin-left: 150px;
+    width: 30px;
+    height: 20px;
+    
+}
+
+#menüdi5-input-div {
+    margin-left: 210px;
+    margin-top: -25px;
+    
+}
+
+#menüdi5-input-titel {
+
+    width: 500px;
+    border: none;
+    height: 18px;
+}
+
+#menüdi5-input-preis {
+
+    margin-left: 20px;
+    width: 50px;
+    border: none;
+    height: 18px;
+}
+
+#menüdi5-plus {
+    margin-left: 240px;
+    margin-top: -160px;
+        width: 20px;
+    height: 20px;
+}
+
+#menüdi5-minus {
+    margin-left: 970px;
+    margin-top: 95px;
+        width: 20px;
+    height: 20px;
+}
+
+
